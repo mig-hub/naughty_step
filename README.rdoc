@@ -1,0 +1,22 @@
+"On ne menace pas son enfant d'une Ratatouille !!!"  -- French Super Nanny
+
+= Naughty Step
+
+Well, Naughty Step is nothing ground-breaking. This is just a basic way of catching errors (Status 500) and pages not found (Status 404) and use related html pages you've written for that purpose. The middleware even has default values:
+
+- public/404.html
+- public/500.html
+
+So a very simple example might be to require the Gem and then:
+
+	use ::Rack::NaughtyStep
+
+Or if you want to declare your paths:
+
+	use ::Rack::NaughtyStep '/path/to/404/page.html', '/path/to/500/page.html'
+	
+Here you go. Truth is that I've been naughty as well. I did not write a proper full example, neither a spec. Just because I was in a rush, but I'll do it as soon as I can. Please don't spank me.
+
+== Copyright
+
+(c) 2010 Mickael Riga - see MIT_LICENCE for details
